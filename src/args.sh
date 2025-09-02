@@ -4,7 +4,7 @@
 #           PLEASE READ THIS BEFORE EDITING
 #=================================================
 # This file is used to set the environment variables for the build process.
-# Before building AnduinOS, you should edit this file to customize the build process.
+# Before building ByersOS, you should edit this file to customize the build process.
 # It is sourced by the build script and should not be executed directly.
 # You can edit this file to customize the build process.
 # However, you should not change the variable names or the structure of the file.
@@ -76,14 +76,14 @@ export BUILD_UBUNTU_MIRROR="http://archive.ubuntu.com/ubuntu/"
 
 # This is the name of the target OS.
 # Must be lowercase without special characters and spaces
-export TARGET_NAME="anduinos"
+export TARGET_NAME="byersos"
 
 # This is the full display name of the target OS.
 # Business name. No special characters or spaces
-export TARGET_BUSINESS_NAME="AnduinOS"
+export TARGET_BUSINESS_NAME="ByersOS"
 
 # Version number. Must be in the format of x.y.z
-export TARGET_BUILD_VERSION="1.4.0"
+export TARGET_BUILD_VERSION="1.0"
 
 # Fork version. Must be in the format of x.y
 # By default, it is the branch name of the git repository.
@@ -214,14 +214,14 @@ export INSTALL_MODIFIED_SOFTWARE_PROPERTIES_GTK="true"
 
 # The timezone for the new OS being built (In chroot environment)
 # To view available options, run: `ls /usr/share/zoneinfo/`
-export TIMEZONE="America/Los_Angeles"
+export TIMEZONE="America/Chicago"
 
 #============================
 # Weather plugin configuration
 #============================
 
 # This will affect the default weather location in the weather plugin.
-export CONFIG_WEATHER_LOCATION="[(uint32 0, 'San Francisco, California, United States', uint32 0, '37.7749295,-122.4194155')]"
+export CONFIG_WEATHER_LOCATION="[(uint32 0, 'Kansas City, Missouri, United States', uint32 0, '39.0997265,-94.5785667')]"
 
 #============================
 # Live system configuration
@@ -237,7 +237,6 @@ export LIVE_UBUNTU_MIRROR="http://archive.ubuntu.com/ubuntu/"
 # The default apps to be installed.
 # All those apps are optional. You can remove any of them if you don't need them.
 export DEFAULT_APPS="
-    gnome-chess \
     gnome-clocks \
     gnome-weather \
     gnome-nettool \
@@ -278,7 +277,6 @@ export DEFAULT_APPS="
 # All those tools are optional. You can remove any of them if you don't need them.
 export DEFAULT_CLI_TOOLS="
     curl \
-    vim \
     nano \
     git \
     build-essential \
@@ -300,31 +298,14 @@ export DEFAULT_CLI_TOOLS="
 
 # The default Flatpak tools to be installed.
 # All those tools are optional. You can remove any of them if you don't need them.
-export DEFAULT_FLATPAK_TOOLS=""
-# export DEFAULT_FLATPAK_TOOLS="
-#     chat.revolt.RevoltDesktop \
-#     com.discordapp.Discord \
-#     com.google.EarthPro \
-#     com.jetbrains.Rider \
-#     com.obsproject.Studio \
-#     com.spotify.Client \
-#     com.tencent.WeChat \
-#     com.valvesoftware.Steam \
-#     io.github.shiftey.Desktop \
-#     net.agalwood.Motrix \
-#     org.musescore.MuseScore \
-#     org.qbittorrent.qBittorrent \
-#     org.signal.Signal \
-#     org.gnome.Boxes \
-#     org.kde.krita \
-#     io.missioncenter.MissionCenter \
-#     com.getpostman.Postman \
-#     org.shotcut.Shotcut \
-#     org.blender.Blender \
-#     org.videolan.VLC \
-#     com.wps.Office \
-#     org.chromium.Chromium \
-#     com.dosbox_x.DOSBox-X \
-#     com.mojang.Minecraft \
-#     org.codeblocks.codeblocks
-#     "
+
+export DEFAULT_FLATPAK_TOOLS="
+    com.discordapp.Discord \
+    com.obsproject.Studio \
+    com.spotify.Client \
+    com.valvesoftware.Steam \
+    org.qbittorrent.qBittorrent \
+    org.signal.Signal \
+    org.blender.Blender \
+    org.videolan.VLC
+    "
