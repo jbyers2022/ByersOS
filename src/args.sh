@@ -301,6 +301,10 @@ export DEFAULT_CLI_TOOLS="
 
 export DEFAULT_FLATPAK_TOOLS="
     com.discordapp.Discord \
+    md.obsidian.Obsidian \
+    com.bitwarden.desktop \
+    com.gitlab.j0chn.nextcloud_password_client \
+    com.nextcloud.desktopclient.nextcloud \
     com.obsproject.Studio \
     com.spotify.Client \
     com.valvesoftware.Steam \
