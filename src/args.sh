@@ -305,7 +305,6 @@ export DEFAULT_FLATPAK_TOOLS="
     com.gitlab.j0chn.nextcloud_password_client \
     com.nextcloud.desktopclient.nextcloud \
     com.obsproject.Studio \
-    com.spotify.Client \
     com.valvesoftware.Steam \
     org.qbittorrent.qBittorrent \
     org.signal.Signal \
