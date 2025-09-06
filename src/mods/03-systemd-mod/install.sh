@@ -8,6 +8,10 @@ print_ok "Installing systemd"
 # Don't wait for network, because wget is not available
 #wait_network
 apt update
+
+apt install -y systemd-cryptsetup || true
+apt install -y linux-sysctl-defaults || true
+
 apt install $INTERACTIVE \
     libterm-readline-gnu-perl \
     systemd-sysv \
@@ -16,8 +20,6 @@ apt install $INTERACTIVE \
     publicsuffix \
     libnss-systemd \
     networkd-dispatcher \
-    systemd-cryptsetup \
-    linux-sysctl-defaults \
     shared-mime-info \
     dmsetup \
     xdg-user-dirs \
