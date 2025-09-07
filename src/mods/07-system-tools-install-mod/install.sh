@@ -4,6 +4,7 @@ set -u                  # treat unset variable as error
 
 wait_network
 print_ok "Installing basic system tool packages..."
+apt upgrade -y --fix-missing
 apt install $INTERACTIVE \
     apparmor \
     bash-completion \
