@@ -72,7 +72,7 @@ export TARGET_UBUNTU_VERSION="oracular"
 # The default is the Aiursoft mirror.
 # You can change it to any other mirror that you prefer.
 # See https://docs.anduinos.com/Install/Select-Best-Apt-Source.html
-export BUILD_UBUNTU_MIRROR="http://us.archive.ubuntu.com/ubuntu"
+export BUILD_UBUNTU_MIRROR="http://mirrors.layeronline.com/ubuntu/"
 
 # This is the name of the target OS.
 # Must be lowercase without special characters and spaces
